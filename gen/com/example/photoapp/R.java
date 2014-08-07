@@ -16,6 +16,50 @@ public final class R {
     }
     public static final class attr {
     }
+    public static final class color {
+        public static final int bg=0x7f050000;
+        /**  remind部分的文字提醒 
+         */
+        public static final int blue=0x7f05000d;
+        /**  续借按钮的绿色 
+ 书籍详情页面的颜色 
+         */
+        public static final int book_cover_bg=0x7f05000f;
+        public static final int book_detail_bg=0x7f050010;
+        /**  设置、搜索界面的字体和divider颜色 
+         */
+        public static final int deep_grey=0x7f050005;
+        /**  橙色按钮颜色 
+         */
+        public static final int deep_white=0x7f050003;
+        /**  橙色 背景颜色 
+         */
+        public static final int fontColor1=0x7f050001;
+        public static final int font_big=0x7f05000a;
+        /**  大文字的灰色  
+         */
+        public static final int font_mid=0x7f05000b;
+        public static final int gray_3=0x7f050008;
+        /**  文字的灰色  
+         */
+        public static final int gray_7=0x7f050009;
+        /**  登陆按钮 
+         */
+        public static final int green=0x7f05000e;
+        /**  抽屉菜单选中的颜色|菜单的字体颜色 
+         */
+        public static final int light_grey=0x7f050006;
+        public static final int light_orange=0x7f050004;
+        /**  字体颜色 
+         */
+        public static final int orange_log=0x7f050002;
+        /**  中文字的灰色  
+         */
+        public static final int red=0x7f05000c;
+        /**  设置界面的子divider颜色 
+         */
+        public static final int white=0x7f050007;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -23,8 +67,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -40,25 +84,25 @@ public final class R {
         public static final int selector_menu_font=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f090006;
-        public static final int button_praise=0x7f090001;
-        public static final int button_upload=0x7f090005;
-        public static final int button_visit=0x7f090003;
-        public static final int relativeLayout1=0x7f090000;
-        public static final int text_praise_num=0x7f090002;
-        public static final int text_visit_num=0x7f090004;
+        public static final int action_settings=0x7f0a0006;
+        public static final int button_praise=0x7f0a0001;
+        public static final int button_upload=0x7f0a0005;
+        public static final int button_visit=0x7f0a0003;
+        public static final int relativeLayout1=0x7f0a0000;
+        public static final int text_praise_num=0x7f0a0002;
+        public static final int text_visit_num=0x7f0a0004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060002;
-        public static final int title_activity_main=0x7f060003;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070002;
+        public static final int title_activity_main=0x7f070003;
     }
     public static final class style {
         /** 
@@ -82,10 +126,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }

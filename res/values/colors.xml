@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#f06939</color><!-- 橙色 背景颜色 -->
+    <color name="fontColor1">#555555</color><!-- 字体颜色 -->
+    <color name="orange_log">#e85019</color><!-- 橙色按钮颜色 -->
+    <color name="deep_white">#e5e5e5</color>
+    
+    <color name="light_orange">#ff8800</color> <!-- 设置、搜索界面的字体和divider颜色 -->
+    <color name="deep_grey">#505050</color><!-- 抽屉菜单选中的颜色|菜单的字体颜色 -->
+    <color name="light_grey">#d2d2d2</color><!-- 设置界面的子divider颜色 -->
+    <color name="white">#FFFFFF</color>
+
+	<color name="gray_3">#333333</color> <!-- 文字的灰色  -->
+	<color name="gray_7">#777777</color>
+	<color name="font_big">#333333</color> <!-- 大文字的灰色  -->
+	<color name="font_mid">#777777</color> <!-- 中文字的灰色  -->
+	
+	<color name="red">#ff0000</color> <!-- remind部分的文字提醒 -->
+	<color name="blue">#32a5cf</color> <!-- 登陆按钮 -->
+	<color name="green">#3ae160</color><!-- 续借按钮的绿色 -->
+	
+	<!-- 书籍详情页面的颜色 -->
+	<color name="book_cover_bg">#dbdbdb</color>
+	<color name="book_detail_bg">#eeeeee</color>
+	
+	<!--  
+	<color name="transparent">#000000</color>
+	<color name="sky_blue">#7EBEE9</color>
+	<color name="sky_blue2">#78B7F2</color>
+	<color name="grey_bg">#f7f7f7</color>
+	<color name="tab_bg">#eaeaea</color>
+	<color name="body2">#F9F9F9</color>
+	<color name="menu1">#EEEEEE</color>
+	<color name="menu2">#BBBBBB</color>
+	<color name="divider1">#DDDDDD</color>
+	<color name="divider2">#EEEEEE</color>
+	<color name="divider3">#FFFFFF</color>
+	<color name="loading">#99000000</color>
+	
+    <color name="blue">#0066FF</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#434343</color>
+    <color name="black_half">#50000000</color>
+    -->
+	
+	<!--<color name="ivory">#FFFFF0</color>象牙色 -->
+	<!--<color name="blanchedalmond">#FFEBCD</color>白杏色 -->
+	<!--<color name="mistyrose">#FFE4E1</color>浅玫瑰色 -->
+	<!--<color name="gainsboro">#DCDCDC</color>淡灰色 -->
+	<!--<color name="bisque">#FFE4C4</color>桔黄色 -->
+	<!--<color name="azure">#F0FFFF</color>天蓝色 -->
+	
+</resources>
