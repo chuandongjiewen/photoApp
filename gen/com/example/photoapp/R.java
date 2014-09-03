@@ -72,28 +72,36 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int qz_album_headerview_button_praise_checked=0x7f020001;
-        public static final int qz_album_headerview_button_praise_normal=0x7f020002;
-        public static final int qz_album_headerview_button_praise_pressed=0x7f020003;
-        public static final int qz_album_headerview_button_upload_normal=0x7f020004;
-        public static final int qz_album_headerview_button_upload_pressed=0x7f020005;
-        public static final int qz_album_headerview_button_visitors_normal=0x7f020006;
-        public static final int qz_album_headerview_button_visitors_pressed=0x7f020007;
-        public static final int qz_album_headerview_default_cover=0x7f020008;
-        public static final int selector_button_upload=0x7f020009;
-        public static final int selector_menu_font=0x7f02000a;
+        public static final int people=0x7f020001;
+        public static final int qz_album_headerview_button_praise_checked=0x7f020002;
+        public static final int qz_album_headerview_button_praise_normal=0x7f020003;
+        public static final int qz_album_headerview_button_praise_pressed=0x7f020004;
+        public static final int qz_album_headerview_button_upload_normal=0x7f020005;
+        public static final int qz_album_headerview_button_upload_pressed=0x7f020006;
+        public static final int qz_album_headerview_button_visitors_normal=0x7f020007;
+        public static final int qz_album_headerview_button_visitors_pressed=0x7f020008;
+        public static final int qz_album_headerview_default_cover=0x7f020009;
+        public static final int selector_button_upload=0x7f02000a;
+        public static final int selector_circle_avatar=0x7f02000b;
+        public static final int selector_menu_font=0x7f02000c;
+        public static final int top=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0006;
-        public static final int button_praise=0x7f0a0001;
-        public static final int button_upload=0x7f0a0005;
-        public static final int button_visit=0x7f0a0003;
+        public static final int action_settings=0x7f0a000a;
+        public static final int button_praise=0x7f0a0004;
+        public static final int button_upload=0x7f0a0008;
+        public static final int button_visit=0x7f0a0006;
+        public static final int horizontal_list_view=0x7f0a0001;
+        public static final int list_avatar=0x7f0a0009;
+        public static final int person_layout=0x7f0a0002;
+        public static final int person_num=0x7f0a0003;
         public static final int relativeLayout1=0x7f0a0000;
-        public static final int text_praise_num=0x7f0a0002;
-        public static final int text_visit_num=0x7f0a0004;
+        public static final int text_praise_num=0x7f0a0005;
+        public static final int text_visit_num=0x7f0a0007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int tpl_list_avatar=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f090000;
