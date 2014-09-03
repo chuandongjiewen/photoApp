@@ -7,7 +7,6 @@ import java.util.HashMap;
 import com.example.photoapp.MainActivity;
 import com.qzone.model.feed.User;
 import com.tencent.component.widget.AsyncImageView;
-
 import com.example.photoapp.R;
 
 import android.R.integer;
@@ -20,6 +19,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 public class AvatarAdapter extends BaseAdapter{
 
@@ -31,13 +31,15 @@ public class AvatarAdapter extends BaseAdapter{
 	private ArrayList<User> userList;
 	private LayoutInflater inflater;
 	private AssetManager assetManager;
-	private HashMap<Integer, ViewHolder> clickMap;   
+	private HashMap<Integer, User> clickedMap;
+
 	public AvatarAdapter(Context context, ArrayList<User> userList){
 		this.mainActivity = (MainActivity)context;
 		this.userList = userList;
 		this.inflater = LayoutInflater.from(context);
 		this.assetManager = mainActivity.getResources().getAssets();
-		this.clickMap = new HashMap<Integer, AvatarAdapter.ViewHolder>();
+		this.clickedMap = new HashMap<Integer, User>();
+
 	}
 	@Override
 	public int getCount() {
@@ -89,7 +91,16 @@ public class AvatarAdapter extends BaseAdapter{
 			
 			@Override
 			public void onClick(View v) {
-				holder.avatar.setRingWidth(0);
+				if (clickedMap.containsKey(position)) {
+					clickedMap.remove(position);
+					holder.avatar.setRingWidth(2);
+				}else{
+					clickedMap.put(position, userList.get(position));
+					holder.avatar.setRingWidth(4);
+				}
+				
+				TextView personNumView = (TextView)mainActivity.findViewById(R.id.person_num);
+				personNumView.setText( clickedMap.size() + "个人被圈出"+position);
 			}
 		});
 	}

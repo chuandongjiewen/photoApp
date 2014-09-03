@@ -70,7 +70,7 @@ public class RoundedImageView extends ImageView {
         Canvas canvas = new Canvas(output);
 
         final Paint paint = new Paint();
-        final Rect rect = new Rect(0, 0, sbmp.getWidth()-2, sbmp.getHeight()-2);
+        final Rect rect = new Rect(0, 0, sbmp.getWidth(), sbmp.getHeight());
 
         paint.setAntiAlias(true);
         paint.setFilterBitmap(true);
@@ -79,7 +79,7 @@ public class RoundedImageView extends ImageView {
         paint.setColor(Color.parseColor("#ff0000"));
         float cx = sbmp.getWidth() / 2 + 0.7f;
         float cy = sbmp.getHeight() / 2 + 0.7f;
-        float cRadius = sbmp.getWidth() / 2 + 0.1f -4+ ringWidth;
+        float cRadius = sbmp.getWidth() / 2 + 0.1f - ringWidth;
         
         canvas.drawCircle(cx, cy, cRadius, paint);
         paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
