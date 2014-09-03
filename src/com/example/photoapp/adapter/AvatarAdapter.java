@@ -31,13 +31,13 @@ public class AvatarAdapter extends BaseAdapter{
 	private ArrayList<User> userList;
 	private LayoutInflater inflater;
 	private AssetManager assetManager;
-	private HashMap<integer position, ViewHolder holder>;
+	private HashMap<Integer, ViewHolder> clickMap;   
 	public AvatarAdapter(Context context, ArrayList<User> userList){
 		this.mainActivity = (MainActivity)context;
 		this.userList = userList;
 		this.inflater = LayoutInflater.from(context);
 		this.assetManager = mainActivity.getResources().getAssets();
-		
+		this.clickMap = new HashMap<Integer, AvatarAdapter.ViewHolder>();
 	}
 	@Override
 	public int getCount() {
