@@ -72,9 +72,12 @@ public class AvatarAdapter extends BaseAdapter{
 		try {
 			bitmap = BitmapFactory.decodeStream(assetManager.open("avatar/" + user.getAvatar()));
 			holder.avatar.setImageBitmap(bitmap);
-//			if (position % 2 == 0) {
-//				holder.avatar.setRingWidth(6);
-//			}
+			//保存click之后的状态
+			if (clickedMap.containsKey(position)) {
+				holder.avatar.setRingWidth(4);
+			}else{
+				holder.avatar.setRingWidth(2);
+			}
 		} catch (IOException e) {
 			holder.avatar.setBackgroundResource(R.drawable.ic_launcher);
 			e.printStackTrace();
