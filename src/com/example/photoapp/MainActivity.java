@@ -1,6 +1,11 @@
 package com.example.photoapp;
 
 import java.security.Principal;
+import java.util.ArrayList;
+
+import com.example.photoapp.adapter.AvatarAdapter;
+import com.qzone.model.feed.User;
+import com.qzonex.module.photo.ui.HorizontalListView;
 
 import android.os.Bundle;
 import android.R.integer;
@@ -10,6 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
+import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,8 +27,11 @@ public class MainActivity extends Activity {
 	private ImageView visitImage;
 	private TextView praiseNumView;
 	private TextView visitNumView;
+	private HorizontalListView listView;
 	
 	private ScaleAnimation scaleAnim;
+	private ArrayList<User> userList;
+	private AvatarAdapter avatarAdapter;
 	
 	private int praiseNum = 0;
 	private int visitNum = 0;
@@ -49,6 +58,7 @@ public class MainActivity extends Activity {
 		visitImage = (ImageView)findViewById(R.id.button_visit);
 		praiseNumView = (TextView)findViewById(R.id.text_praise_num);
 		visitNumView = (TextView)findViewById(R.id.text_visit_num);
+		listView = (HorizontalListView)findViewById(R.id.horizontal_list_view);
 	}
 	
 	private void initData(){
@@ -59,6 +69,15 @@ public class MainActivity extends Activity {
 		scaleAnim = new ScaleAnimation(0.0f, 1.4f, 0.0f, 1.4f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 		scaleAnim.setDuration(500);
 		
+		userList = new ArrayList<User>();
+		for (int i = 0; i < 10; i++) {
+			User user = new User();
+			user.setUsername("username_" + i);
+			user.setAvatar("avatar (" + i + ").png");
+			userList.add(user);
+		}
+		avatarAdapter = new AvatarAdapter(this, userList);
+		listView.setAdapter(avatarAdapter);
 	}
 	
 	
