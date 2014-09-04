@@ -32,13 +32,14 @@ public class AvatarAdapter extends BaseAdapter{
 	private LayoutInflater inflater;
 	private AssetManager assetManager;
 	private HashMap<Integer, User> clickedMap;
+
 	public AvatarAdapter(Context context, ArrayList<User> userList){
 		this.mainActivity = (MainActivity)context;
 		this.userList = userList;
 		this.inflater = LayoutInflater.from(context);
 		this.assetManager = mainActivity.getResources().getAssets();
 		this.clickedMap = new HashMap<Integer, User>();
-		
+
 	}
 	@Override
 	public int getCount() {
@@ -102,7 +103,7 @@ public class AvatarAdapter extends BaseAdapter{
 				}
 				
 				TextView personNumView = (TextView)mainActivity.findViewById(R.id.person_num);
-				personNumView.setText("有" + clickedMap.size() + "个人被全出");
+				personNumView.setText( clickedMap.size() + "个人被圈出"+position);
 			}
 		});
 	}

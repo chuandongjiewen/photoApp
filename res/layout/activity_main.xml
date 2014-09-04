@@ -43,7 +43,7 @@
                 android:id="@+id/person_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="两人被圈出"
+                android:text="0人被圈出"
                 android:textColor="#fff"
                 android:textSize="14dp"
                 android:layout_gravity="left" 
