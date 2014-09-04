@@ -14,7 +14,9 @@ import android.widget.ImageView;
  */
 public class RoundedImageView extends ImageView {
 	
-	private int ringWidth = 4;
+
+	private int ringWidth = 2;
+
 
     public RoundedImageView(Context context) {
         super(context);

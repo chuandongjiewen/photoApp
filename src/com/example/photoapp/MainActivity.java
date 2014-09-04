@@ -8,6 +8,7 @@ import com.qzone.model.feed.User;
 import com.qzonex.module.photo.ui.HorizontalListView;
 
 import android.os.Bundle;
+import android.R.array;
 import android.R.integer;
 import android.app.Activity;
 import android.view.Menu;
@@ -35,7 +36,7 @@ public class MainActivity extends Activity {
 	
 	private int praiseNum = 0;
 	private int visitNum = 0;
-
+	private int selectArr[];
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -73,6 +74,10 @@ public class MainActivity extends Activity {
 		for (int i = 0; i < 10; i++) {
 			User user = new User();
 			user.setUsername("username_" + i);
+
+			String id =  Integer.toString(i); 
+			user.setUid(id);
+
 			user.setAvatar("avatar (" + i + ").png");
 			userList.add(user);
 		}
